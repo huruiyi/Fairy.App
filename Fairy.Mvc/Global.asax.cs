@@ -16,10 +16,11 @@ namespace Fairy.Mvc
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             //example 1:
             //AssemblyInfo.cs [assembly: log4net.Config.XmlConfigurator(ConfigFile = "log4net.config", Watch = true)]
-            //LogHelper.SetConfig();
+            LogHelper.SetConfig();
+            //XmlConfigurator.Configure(new FileInfo(Server.MapPath("~/Web.config")));
 
             //example 2:
-            XmlConfigurator.Configure(new FileInfo(Server.MapPath("~/App_Config/log4net-v3.config")));
+            //XmlConfigurator.Configure(new FileInfo(Server.MapPath("~/App_Config/log4net-v3.config")));
         }
 
         protected void Application_Error(object sender, EventArgs e)

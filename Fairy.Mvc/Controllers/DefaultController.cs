@@ -12,8 +12,13 @@ namespace Fairy.Mvc.Controllers
         // GET: Default
         public ActionResult Index()
         {
-            string helloWorld = "Hello World！！！";
-            Log.Info(helloWorld);
+            string helloWorld = "Hello World！！！世界你好！！";
+            for (int i = 0; i < 10000; i++)
+            {
+                Log.Info(helloWorld);
+                Log.Error(helloWorld);
+                Log.Fatal(helloWorld);
+            }
             return Content(helloWorld);
         }
 
