@@ -17,7 +17,7 @@ namespace WinApp
 
         private void btnDownload_Click(object sender, EventArgs e)
         {
-            HttpHelper.DownFile(tbUrl.Text,"fuck.qq.exe", pbDownload);
+            HttpHelper.DownFile(tbUrl.Text, "qq.exe", pbDownload);
         }
     }
 }
